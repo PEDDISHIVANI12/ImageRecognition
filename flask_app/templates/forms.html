@@ -1,0 +1,14 @@
+<form action="{{ url_for("gfg")}}" method="post"enctype = "multipart/form-data">
+<label for="file">First Name:</label>
+<input type="file" id = "file" name="file" placeholder="file">
+<button type="submit">Login</button>
+
+<script type="application/javascript">
+    Dropzone.options.file = {
+        paramName: 'file',
+        chunking: true,
+        forceChunking: true,
+        maxFilesize: 1025, // megabytes
+        chunkSize: 1000000 // bytes
+    }
+</script>
